@@ -1,0 +1,291 @@
+
+
+version: "3.1"
+
+stories:
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+
+- story: proliferative monday vegetarian diet
+  steps:
+  - intent: ask_proliferative_monday_vegetarian_breakfast
+  - action: utter_proliferative_monday_vegetarian_breakfast
+  - intent: ask_proliferative_monday_vegetarian_morning_snack
+  - action: utter_proliferative_monday_vegetarian_morning_snack
+  - intent: ask_proliferative_monday_vegetarian_lunch
+  - action: utter_proliferative_monday_vegetarian_lunch
+  - intent: ask_proliferative_monday_vegetarian_midday_snack
+  - action: utter_proliferative_monday_vegetarian_midday_snack
+  - intent: ask_proliferative_monday_vegetarian_dinner
+  - action: utter_proliferative_monday_vegetarian_dinner
+- story: proliferative monday non-vegetarian diet
+  steps:
+  - intent: ask_proliferative_monday_nonvegetarian_breakfast
+  - action: utter_proliferative_monday_nonvegetarian_breakfast
+  - intent: ask_proliferative_monday_nonvegetarian_morning_snack
+  - action: utter_proliferative_monday_nonvegetarian_morning_snack
+  - intent: ask_proliferative_monday_nonvegetarian_lunch
+  - action: utter_proliferative_monday_nonvegetarian_lunch
+  - intent: ask_proliferative_monday_nonvegetarian_midday_snack
+  - action: utter_proliferative_monday_nonvegetarian_midday_snack
+  - intent: ask_proliferative_monday_nonvegetarian_dinner
+  - action: utter_proliferative_monday_nonvegetarian_dinner
+- story: proliferative monday vegan diet
+  steps:
+  - intent: ask_proliferative_monday_vegan_breakfast
+  - action: utter_proliferative_monday_vegan_breakfast
+  - intent: ask_proliferative_monday_vegan_morning_snack
+  - action: utter_proliferative_monday_vegan_morning_snack
+  - intent: ask_proliferative_monday_vegan_lunch
+  - action: utter_proliferative_monday_vegan_lunch
+  - intent: ask_proliferative_monday_vegan_midday_snack
+  - action: utter_proliferative_monday_vegan_midday_snack
+  - intent: ask_proliferative_monday_vegan_dinner
+  - action: utter_proliferative_monday_vegan_dinner
+- story: proliferative tuesday vegetarian diet
+  steps:
+  - intent: ask_proliferative_tuesday_vegetarian_breakfast
+  - action: utter_proliferative_tuesday_vegetarian_breakfast
+  - intent: ask_proliferative_tuesday_vegetarian_morning_snack
+  - action: utter_proliferative_tuesday_vegetarian_morning_snack
+  - intent: ask_proliferative_tuesday_vegetarian_lunch
+  - action: utter_proliferative_tuesday_vegetarian_lunch
+  - intent: ask_proliferative_tuesday_vegetarian_midday_snack
+  - action: utter_proliferative_tuesday_vegetarian_midday_snack
+  - intent: ask_proliferative_tuesday_vegetarian_dinner
+  - action: utter_proliferative_tuesday_vegetarian_dinner
+- story: proliferative tuesday non-vegetarian diet
+  steps:
+  - intent: ask_proliferative_tuesday_nonvegetarian_breakfast
+  - action: utter_proliferative_tuesday_nonvegetarian_breakfast
+  - intent: ask_proliferative_tuesday_nonvegetarian_morning_snack
+  - action: utter_proliferative_tuesday_nonvegetarian_morning_snack
+  - intent: ask_proliferative_tuesday_nonvegetarian_lunch
+  - action: utter_proliferative_tuesday_nonvegetarian_lunch
+  - intent: ask_proliferative_tuesday_nonvegetarian_midday_snack
+  - action: utter_proliferative_tuesday_nonvegetarian_midday_snack
+  - intent: ask_proliferative_tuesday_nonvegetarian_dinner
+  - action: utter_proliferative_tuesday_nonvegetarian_dinner
+- story: proliferative tuesday vegan diet
+  steps:
+  - intent: ask_proliferative_tuesday_vegan_breakfast
+  - action: utter_proliferative_tuesday_vegan_breakfast
+  - intent: ask_proliferative_tuesday_vegan_morning_snack
+  - action: utter_proliferative_tuesday_vegan_morning_snack
+  - intent: ask_proliferative_tuesday_vegan_lunch
+  - action: utter_proliferative_tuesday_vegan_lunch
+  - intent: ask_proliferative_tuesday_vegan_midday_snack
+  - action: utter_proliferative_tuesday_vegan_midday_snack
+  - intent: ask_proliferative_tuesday_vegan_dinner
+  - action: utter_proliferative_tuesday_vegan_dinner
+- story: proliferative wednesday vegetarian diet
+  steps:
+  - intent: ask_proliferative_wednesday_vegetarian_breakfast
+  - action: utter_proliferative_wednesday_vegetarian_breakfast
+  - intent: ask_proliferative_wednesday_vegetarian_morning_snack
+  - action: utter_proliferative_wednesday_vegetarian_morning_snack
+  - intent: ask_proliferative_wednesday_vegetarian_lunch
+  - action: utter_proliferative_wednesday_vegetarian_lunch
+  - intent: ask_proliferative_wednesday_vegetarian_midday_snack
+  - action: utter_proliferative_wednesday_vegetarian_midday_snack
+  - intent: ask_proliferative_wednesday_vegetarian_dinner
+  - action: utter_proliferative_wednesday_vegetarian_dinner
+- story: proliferative wednesday non-vegetarian diet
+  steps:
+  - intent: ask_proliferative_wednesday_nonvegetarian_breakfast
+  - action: utter_proliferative_wednesday_nonvegetarian_breakfast
+  - intent: ask_proliferative_wednesday_nonvegetarian_morning_snack
+  - action: utter_proliferative_wednesday_nonvegetarian_morning_snack
+  - intent: ask_proliferative_wednesday_nonvegetarian_lunch
+  - action: utter_proliferative_wednesday_nonvegetarian_lunch
+  - intent: ask_proliferative_wednesday_nonvegetarian_midday_snack
+  - action: utter_proliferative_wednesday_nonvegetarian_midday_snack
+  - intent: ask_proliferative_wednesday_nonvegetarian_dinner
+  - action: utter_proliferative_wednesday_nonvegetarian_dinner
+- story: proliferative wednesday vegan diet
+  steps:
+  - intent: ask_proliferative_wednesday_vegan_breakfast
+  - action: utter_proliferative_wednesday_vegan_breakfast
+  - intent: ask_proliferative_wednesday_vegan_morning_snack
+  - action: utter_proliferative_wednesday_vegan_morning_snack 
+  - intent: ask_proliferative_wednesday_vegan_lunch
+  - action: utter_proliferative_wednesday_vegan_lunch 
+  - intent: ask_proliferative_wednesday_vegan_midday_snack
+  - action: utter_proliferative_wednesday_vegan_midday_snack
+  - intent: ask_proliferative_wednesday_vegan_dinner
+  - action: utter_proliferative_wednesday_vegan_dinner
+- story: proliferative thursday vegetarian diet
+  steps:
+  - intent: ask_proliferative_thursday_vegetarian_breakfast
+  - action: utter_proliferative_thursday_vegetarian_breakfast
+  - intent: ask_proliferative_thursday_vegetarian_morning_snack
+  - action: utter_proliferative_thursday_vegetarian_morning_snack
+  - intent: ask_proliferative_thursday_vegetarian_lunch
+  - action: utter_proliferative_thursday_vegetarian_lunch
+  - intent: ask_proliferative_thursday_vegetarian_midday_snack
+  - action: utter_proliferative_thursday_vegetarian_midday_snack
+  - intent: ask_proliferative_thursday_vegetarian_dinner
+  - action: utter_proliferative_thursday_vegetarian_dinner
+- story: proliferative thursday non-vegetarian diet
+  steps:
+  - intent: ask_proliferative_thursday_nonvegetarian_breakfast
+  - action: utter_proliferative_thursday_nonvegetarian_breakfast
+  - intent: ask_proliferative_thursday_nonvegetarian_morning_snack
+  - action: utter_proliferative_thursday_nonvegetarian_morning_snack
+  - intent: ask_proliferative_thursday_nonvegetarian_lunch
+  - action: utter_proliferative_thursday_nonvegetarian_lunch
+  - intent: ask_proliferative_thursday_nonvegetarian_midday_snack
+  - action: utter_proliferative_thursday_nonvegetarian_midday_snack
+  - intent: ask_proliferative_thursday_nonvegetarian_dinner
+  - action: utter_proliferative_thursday_nonvegetarian_dinner
+- story: proliferative thursday vegan diet
+  steps:
+  - intent: ask_proliferative_thursday_vegan_breakfast
+  - action: utter_proliferative_thursday_vegan_breakfast
+  - intent: ask_proliferative_thursday_vegan_morning_snack
+  - action: utter_proliferative_thursday_vegan_morning_snack
+  - intent: ask_proliferative_thursday_vegan_lunch
+  - action: utter_proliferative_thursday_vegan_lunch
+  - intent: ask_proliferative_thursday_vegan_midday_snack
+  - action: utter_proliferative_thursday_vegan_midday_snack
+  - intent: ask_proliferative_thursday_vegan_dinner
+  - action: utter_proliferative_thursday_vegan_dinner
+- story: proliferative friday vegetarian diet
+  steps:
+  - intent: ask_proliferative_friday_vegetarian_breakfast
+  - action: utter_proliferative_friday_vegetarian_breakfast
+  - intent: ask_proliferative_friday_vegetarian_morning_snack
+  - action: utter_proliferative_friday_vegetarian_morning_snack
+  - intent: ask_proliferative_friday_vegetarian_lunch
+  - action: utter_proliferative_friday_vegetarian_lunch
+  - intent: ask_proliferative_friday_vegetarian_midday_snack
+  - action: utter_proliferative_friday_vegetarian_midday_snack
+  - intent: ask_proliferative_friday_vegetarian_dinner
+  - action: utter_proliferative_friday_vegetarian_dinner
+- story: proliferative friday non-vegetarian diet
+  steps:
+  - intent: ask_proliferative_friday_nonvegetarian_breakfast
+  - action: utter_proliferative_friday_nonvegetarian_breakfast
+  - intent: ask_proliferative_friday_nonvegetarian_morning_snack
+  - action: utter_proliferative_friday_nonvegetarian_morning_snack
+  - intent: ask_proliferative_friday_nonvegetarian_lunch
+  - action: utter_proliferative_friday_nonvegetarian_lunch
+  - intent: ask_proliferative_friday_nonvegetarian_midday_snack
+  - action: utter_proliferative_friday_nonvegetarian_midday_snack
+  - intent: ask_proliferative_friday_nonvegetarian_dinner
+  - action: utter_proliferative_friday_nonvegetarian_dinner
+- story: proliferative friday vegan diet  
+  steps:
+  - intent: ask_proliferative_friday_vegan_breakfast
+  - action: utter_proliferative_friday_vegan_breakfast
+  - intent: ask_proliferative_friday_vegan_morning_snack
+  - action: utter_proliferative_friday_vegan_morning_snack
+  - intent: ask_proliferative_friday_vegan_lunch
+  - action: utter_proliferative_friday_vegan_lunch
+  - intent: ask_proliferative_friday_vegan_midday_snack
+  - action: utter_proliferative_friday_vegan_midday_snack
+  - intent: ask_proliferative_friday_vegan_dinner
+  - action: utter_proliferative_friday_vegan_dinner
+- story: proliferative saturday vegetarian diet
+  steps:
+  - intent: ask_proliferative_saturday_vegetarian_breakfast
+  - action: utter_proliferative_saturday_vegetarian_breakfast
+  - intent: ask_proliferative_saturday_vegetarian_morning_snack
+  - action: utter_proliferative_saturday_vegetarian_morning_snack
+  - intent: ask_proliferative_saturday_vegetarian_lunch
+  - action: utter_proliferative_saturday_vegetarian_lunch
+  - intent: ask_proliferative_saturday_vegetarian_midday_snack
+  - action: utter_proliferative_saturday_vegetarian_midday_snack
+  - intent: ask_proliferative_saturday_vegetarian_dinner
+  - action: utter_proliferative_saturday_vegetarian_dinner
+- story: proliferative saturday non-vegetarian diet
+  steps:
+  - intent: ask_proliferative_saturday_nonvegetarian_breakfast
+  - action: utter_proliferative_saturday_nonvegetarian_breakfast
+  - intent: ask_proliferative_saturday_nonvegetarian_morning_snack
+  - action: utter_proliferative_saturday_nonvegetarian_morning_snack
+  - intent: ask_proliferative_saturday_nonvegetarian_lunch
+  - action: utter_proliferative_saturday_nonvegetarian_lunch
+  - intent: ask_proliferative_saturday_nonvegetarian_midday_snack
+  - action: utter_proliferative_saturday_nonvegetarian_midday_snack
+  - intent: ask_proliferative_saturday_nonvegetarian_dinner
+  - action: utter_proliferative_saturday_nonvegetarian_dinner
+- story: proliferative saturday vegan diet
+  steps:
+  - intent: ask_proliferative_saturday_vegan_breakfast
+  - action: utter_proliferative_saturday_vegan_breakfast
+  - intent: ask_proliferative_saturday_vegan_morning_snack
+  - action: utter_proliferative_saturday_vegan_morning_snack
+  - intent: ask_proliferative_saturday_vegan_lunch
+  - action: utter_proliferative_saturday_vegan_lunch
+  - intent: ask_proliferative_saturday_vegan_midday_snack
+  - action: utter_proliferative_saturday_vegan_midday_snack
+  - intent: ask_proliferative_saturday_vegan_dinner
+  - action: utter_proliferative_saturday_vegan_dinner
+- story: proliferative sunday vegetarian diet
+  steps:
+  - intent: ask_proliferative_sunday_vegetarian_breakfast
+  - action: utter_proliferative_sunday_vegetarian_breakfast
+  - intent: ask_proliferative_sunday_vegetarian_morning_snack
+  - action: utter_proliferative_sunday_vegetarian_morning_snack
+  - intent: ask_proliferative_sunday_vegetarian_lunch
+  - action: utter_proliferative_sunday_vegetarian_lunch
+  - intent: ask_proliferative_sunday_vegetarian_midday_snack
+  - action: utter_proliferative_sunday_vegetarian_midday_snack
+  - intent: ask_proliferative_sunday_vegetarian_dinner
+  - action: utter_proliferative_sunday_vegetarian_dinner
+- story: proliferative sunday non-vegetarian diet
+  steps:
+  - intent: ask_proliferative_sunday_nonvegetarian_breakfast
+  - action: utter_proliferative_sunday_nonvegetarian_breakfast
+  - intent: ask_proliferative_sunday_nonvegetarian_morning_snack
+  - action: utter_proliferative_sunday_nonvegetarian_morning_snack
+  - intent: ask_proliferative_sunday_nonvegetarian_lunch
+  - action: utter_proliferative_sunday_nonvegetarian_lunch
+  - intent: ask_proliferative_sunday_nonvegetarian_midday_snack
+  - action: utter_proliferative_sunday_nonvegetarian_midday_snack
+  - intent: ask_proliferative_sunday_nonvegetarian_dinner
+  - action: utter_proliferative_sunday_nonvegetarian_dinner
+- story: proliferative sunday vegan diet
+  steps:
+  - intent: ask_proliferative_sunday_vegan_breakfast
+  - action: utter_proliferative_sunday_vegan_breakfast
+  - intent: ask_proliferative_sunday_vegan_morning_snack
+  - action: utter_proliferative_sunday_vegan_morning_snack
+  - intent: ask_proliferative_sunday_vegan_lunch
+  - action: utter_proliferative_sunday_vegan_lunch
+  - intent: ask_proliferative_sunday_vegan_midday_snack
+  - action: utter_proliferative_sunday_vegan_midday_snack
+  - intent: ask_proliferative_sunday_vegan_dinner
+  - action: utter_proliferative_sunday_vegan_dinner
+
+
+
+
+
+

@@ -1,0 +1,1045 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - ask_proliferative_monday_vegetarian_breakfast
+  - ask_proliferative_monday_vegetarian_morning_snack
+  - ask_proliferative_monday_vegetarian_lunch
+  - ask_proliferative_monday_vegetarian_midday_snack
+  - ask_proliferative_monday_vegetarian_dinner
+  - ask_proliferative_monday_nonvegetarian_breakfast
+  - ask_proliferative_monday_nonvegetarian_morning_snack
+  - ask_proliferative_monday_nonvegetarian_lunch
+  - ask_proliferative_monday_nonvegetarian_midday_snack
+  - ask_proliferative_monday_nonvegetarian_dinner
+  - ask_proliferative_monday_vegan_breakfast
+  - ask_proliferative_monday_vegan_morning_snack
+  - ask_proliferative_monday_vegan_lunch
+  - ask_proliferative_monday_vegan_midday_snack
+  - ask_proliferative_monday_vegan_dinner
+  - ask_proliferative_tuesday_vegetarian_breakfast
+  - ask_proliferative_tuesday_vegetarian_morning_snack
+  - ask_proliferative_tuesday_vegetarian_lunch
+  - ask_proliferative_tuesday_vegetarian_midday_snack
+  - ask_proliferative_tuesday_vegetarian_dinner
+  - ask_proliferative_tuesday_nonvegetarian_breakfast
+  - ask_proliferative_tuesday_nonvegetarian_morning_snack
+  - ask_proliferative_tuesday_nonvegetarian_lunch
+  - ask_proliferative_tuesday_nonvegetarian_midday_snack
+  - ask_proliferative_tuesday_nonvegetarian_dinner
+  - ask_proliferative_tuesday_vegan_breakfast 
+  - ask_proliferative_tuesday_vegan_morning_snack
+  - ask_proliferative_tuesday_vegan_lunch
+  - ask_proliferative_tuesday_vegan_midday_snack
+  - ask_proliferative_tuesday_vegan_dinner
+  - ask_proliferative_wednesday_vegetarian_breakfast
+  - ask_proliferative_wednesday_vegetarian_morning_snack
+  - ask_proliferative_wednesday_vegetarian_lunch
+  - ask_proliferative_wednesday_vegetarian_midday_snack
+  - ask_proliferative_wednesday_vegetarian_dinner
+  - ask_proliferative_wednesday_nonvegetarian_breakfast
+  - ask_proliferative_wednesday_nonvegetarian_morning_snack
+  - ask_proliferative_wednesday_nonvegetarian_lunch
+  - ask_proliferative_wednesday_nonvegetarian_midday_snack
+  - ask_proliferative_wednesday_nonvegetarian_dinner
+  - ask_proliferative_wednesday_vegan_breakfast
+  - ask_proliferative_wednesday_vegan_morning_snack
+  - ask_proliferative_wednesday_vegan_lunch
+  - ask_proliferative_wednesday_vegan_midday_snack
+  - ask_proliferative_wednesday_vegan_dinner
+  - ask_proliferative_thursday_vegetarian_breakfast
+  - ask_proliferative_thursday_vegetarian_morning_snack
+  - ask_proliferative_thursday_vegetarian_lunch
+  - ask_proliferative_thursday_vegetarian_midday_snack
+  - ask_proliferative_thursday_vegetarian_dinner
+  - ask_proliferative_thursday_nonvegetarian_breakfast
+  - ask_proliferative_thursday_nonvegetarian_morning_snack
+  - ask_proliferative_thursday_nonvegetarian_lunch
+  - ask_proliferative_thursday_nonvegetarian_midday_snack
+  - ask_proliferative_thursday_nonvegetarian_dinner
+  - ask_proliferative_thursday_vegan_breakfast
+  - ask_proliferative_thursday_vegan_morning_snack
+  - ask_proliferative_thursday_vegan_lunch
+  - ask_proliferative_thursday_vegan_midday_snack
+  - ask_proliferative_thursday_vegan_dinner
+  - ask_proliferative_friday_vegetarian_breakfast
+  - ask_proliferative_friday_vegetarian_morning_snack
+  - ask_proliferative_friday_vegetarian_lunch
+  - ask_proliferative_friday_vegetarian_midday_snack
+  - ask_proliferative_friday_vegetarian_dinner
+  - ask_proliferative_friday_nonvegetarian_breakfast
+  - ask_proliferative_friday_nonvegetarian_morning_snack
+  - ask_proliferative_friday_nonvegetarian_lunch
+  - ask_proliferative_friday_nonvegetarian_midday_snack
+  - ask_proliferative_friday_nonvegetarian_dinner
+  - ask_proliferative_friday_vegan_breakfast
+  - ask_proliferative_friday_vegan_morning_snack
+  - ask_proliferative_friday_vegan_lunch
+  - ask_proliferative_friday_vegan_midday_snack
+  - ask_proliferative_friday_vegan_dinner
+  - ask_proliferative_saturday_vegetarian_breakfast
+  - ask_proliferative_saturday_vegetarian_morning_snack
+  - ask_proliferative_saturday_vegetarian_lunch
+  - ask_proliferative_saturday_vegetarian_midday_snack
+  - ask_proliferative_saturday_vegetarian_dinner
+  - ask_proliferative_saturday_nonvegetarian_breakfast
+  - ask_proliferative_saturday_nonvegetarian_morning_snack
+  - ask_proliferative_saturday_nonvegetarian_lunch
+  - ask_proliferative_saturday_nonvegetarian_midday_snack
+  - ask_proliferative_saturday_nonvegetarian_dinner
+  - ask_proliferative_saturday_vegan_breakfast
+  - ask_proliferative_saturday_vegan_morning_snack
+  - ask_proliferative_saturday_vegan_lunch
+  - ask_proliferative_saturday_vegan_midday_snack
+  - ask_proliferative_saturday_vegan_dinner
+  - ask_proliferative_sunday_vegetarian_breakfast
+  - ask_proliferative_sunday_vegetarian_morning_snack
+  - ask_proliferative_sunday_vegetarian_lunch
+  - ask_proliferative_sunday_vegetarian_midday_snack
+  - ask_proliferative_sunday_vegetarian_dinner
+  - ask_proliferative_sunday_nonvegetarian_breakfast
+  - ask_proliferative_sunday_nonvegetarian_morning_snack
+  - ask_proliferative_sunday_nonvegetarian_lunch
+  - ask_proliferative_sunday_nonvegetarian_midday_snack
+  - ask_proliferative_sunday_nonvegetarian_dinner
+  - ask_proliferative_sunday_vegan_breakfast
+  - ask_proliferative_sunday_vegan_morning_snack
+  - ask_proliferative_sunday_vegan_lunch
+  - ask_proliferative_sunday_vegan_midday_snack
+  - ask_proliferative_sunday_vegan_dinner
+responses:
+  utter_greet:
+    - text: "Hey! How are you?"
+
+  utter_cheer_up:
+    - text: "Here is something to cheer you up:"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Did that help you?"
+
+  utter_happy:
+    - text: "Great, carry on!"
+
+  utter_goodbye:
+    - text: "Bye"
+
+  utter_iamabot:
+    - text: "I am a bot, powered by Rasa."
+
+  utter_hi_swathi:
+    - text: "Hello Swathi!"
+
+  utter_great:
+    - text: "Wow, nice! You know many things at this age."
+
+  utter_proliferative_monday_vegetarian_breakfast:
+    - text: "For vegetarian breakfast in the proliferative diet on Monday, you can have: Besan Chilla with Mint Chutney,Oats Upma with Mixed Vegetables, Ragi Idli with Sambar,Moong Dal Cheela, Quinoa Poha."
+
+  utter_proliferative_monday_vegetarian_morning_snack:
+    - text: |
+        For a vegetarian morning snack in the proliferative diet on Monday, you can have:
+        - Roasted Chana
+        - Cucumber with Mint Raita
+        - Almonds (7-8 pieces)
+        - Sprouted Moong
+        - Roasted Makhana.
+
+  utter_proliferative_monday_vegetarian_lunch:
+    - text: |
+        For vegetarian lunch in the proliferative diet on Monday, you can have:
+        - Dal Khichdi with Vegetable Raita
+        - Brown Rice with Rajma Curry
+        - Vegetable Daliya
+        - Quinoa Pulao
+        - Millet Khichdi.
+
+  utter_proliferative_monday_vegetarian_midday_snack:
+    - text: |
+        For a vegetarian midday snack in the proliferative diet on Monday, you can have:
+        - Roasted Peanuts
+        - Buttermilk
+        - Apple Slices
+        - Vegetable Soup
+        - Roasted Chana.
+
+  utter_proliferative_monday_vegetarian_dinner:
+    - text: |
+        For vegetarian dinner in the proliferative diet on Monday, you can have:
+        - Vegetable Daliya
+        - Moong Dal Khichdi
+        - Quinoa Vegetable Curry
+        - Millet Roti with Dal
+        - Brown Rice with Vegetable Curry.
+  utter_proliferative_monday_nonvegetarian_breakfast:
+    - text: |
+        For non-vegetarian breakfast in the proliferative diet on Monday, you can have:
+        - Egg White Omelet with Spinach
+        - Smoked Salmon on Whole Wheat Toast
+        - Chicken Keema Upma
+        - Egg Bhurji with Millets
+        - Lean Turkey Scramble.
+
+  utter_proliferative_monday_nonvegetarian_morning_snack:
+    - text: |
+        For a non-vegetarian morning snack in the proliferative diet on Monday, you can have:
+        - Boiled Egg White
+        - Grilled Chicken Strips
+        - Hung Curd with Almonds
+        - Fish Cutlet
+        - Roasted Pumpkin Seeds.
+
+  utter_proliferative_monday_nonvegetarian_lunch:
+    - text: |
+        For non-vegetarian lunch in the proliferative diet on Monday, you can have:
+        - Grilled Chicken Salad
+        - Baked Fish with Brown Rice
+        - Lean Meat Daliya
+        - Egg White Curry
+        - Tandoori Chicken with Quinoa.
+
+  utter_proliferative_monday_nonvegetarian_midday_snack:
+    - text: |
+        For a non-vegetarian midday snack in the proliferative diet on Monday, you can have:
+        - Chicken Soup
+        - Tuna Salad
+        - Boiled Egg
+        - Grilled Prawns
+        - Protein Smoothie.
+
+  utter_proliferative_monday_nonvegetarian_dinner:
+    - text: |
+        For non-vegetarian dinner in the proliferative diet on Monday, you can have:
+        - Baked Cod with Vegetable Stir Fry
+        - Lean Mutton Curry
+        - Chicken Pulao
+        - Fish Moilee
+        - Turkey Meatballs.
+  utter_proliferative_monday_vegan_breakfast:
+    - text: |
+        For vegan breakfast in the proliferative diet on Monday, you can have:
+        - Chia Pudding with Almond Milk and Berries
+        - Vegetable Poha with Tofu
+        - Oats Dosa with Mint Chutney
+        - Sprouted Moong Salad
+        - Quinoa Upma.
+
+  utter_proliferative_monday_vegan_morning_snack:
+    - text: |
+        For a vegan morning snack in the proliferative diet on Monday, you can have:
+        - Handful of Mixed Nuts (Almonds, Walnuts)
+        - Roasted Chickpeas
+        - Carrot and Cucumber Sticks with Hummus
+        - Fruit Salad with Guava
+        - Sunflower Seeds.
+
+  utter_proliferative_monday_vegan_lunch:
+    - text: |
+        For vegan lunch in the proliferative diet on Monday, you can have:
+        - Vegetable Brown Rice Pulao
+        - Quinoa Salad with Roasted Vegetables
+        - Mixed Dal Soup with Whole Wheat Bread
+        - Stuffed Capsicum with Millet
+        - Vegetable Barley Soup.
+
+  utter_proliferative_monday_vegan_midday_snack:
+    - text: |
+        For a vegan midday snack in the proliferative diet on Monday, you can have:
+        - Coconut Water with Chia Seeds
+        - Steamed Edamame
+        - Masala Roasted Peanuts
+        - Apple Slices with Almond Butter
+        - Homemade Protein Bar.
+
+  utter_proliferative_monday_vegan_dinner:
+    - text: |
+        For vegan dinner in the proliferative diet on Monday, you can have:
+        - Stir-Fried Vegetables with Tofu
+        - Lentil Curry with Brown Rice
+        - Sweet Potato Mash with Grilled Veggies
+        - Stuffed Bell Peppers with Millet.
+  utter_proliferative_tuesday_vegetarian_breakfast:
+    - text: |
+        For vegetarian breakfast in the proliferative diet on Tuesday, you can have:
+        - Ragi Dosa with Coconut Chutney
+        - Kodo Millet Porridge with Almonds
+        - Vegetable Poha with Tofu
+        - Bajra Upma with Vegetables
+        - Moong Dal Cheela.
+
+  utter_proliferative_tuesday_vegetarian_morning_snack:
+    - text: |
+        For a vegetarian morning snack in the proliferative diet on Tuesday, you can have:
+        - Almonds (7-8 pieces)
+        - Roasted Makhana
+        - Carrot Sticks with Lemon
+        - Sprouted Moong
+        - Roasted Chana.
+
+  utter_proliferative_tuesday_vegetarian_lunch:
+    - text: |
+        For vegetarian lunch in the proliferative diet on Tuesday, you can have:
+        - Vegetable Sambar with Millet
+        - Quinoa Pulao with Spinach
+        - Moong Dal Khichdi with Vegetable Raita
+        - Vegetable Barley Soup
+        - Kodo Millet Porridge.
+
+  utter_proliferative_tuesday_vegetarian_midday_snack:
+    - text: |
+        For a vegetarian midday snack in the proliferative diet on Tuesday, you can have:
+        - Roasted Peanuts
+        - Apple Slices
+        - Fresh Coconut Water
+        - Vegetable Soup
+        - Roasted Chana.
+
+  utter_proliferative_tuesday_vegetarian_dinner:
+    - text: |
+        For vegetarian dinner in the proliferative diet on Tuesday, you can have:
+        - Moong Dal Soup with Ragi Roti
+        - Quinoa Vegetable Curry
+        - Vegetable Stir Fry with Bajra Roti
+        - Millet Roti with Spinach
+        - Brown Rice with Vegetable Curry.
+  utter_proliferative_tuesday_nonvegetarian_breakfast:
+    - text: |
+        For non-vegetarian breakfast in the proliferative diet on Tuesday, you can have:
+        - Scrambled Eggs with Tomato
+        - Grilled Chicken with Quinoa
+        - Chicken Keema Upma
+        - Poached Eggs with Spinach
+        - Egg Bhurji with Kale.
+
+  utter_proliferative_tuesday_nonvegetarian_morning_snack:
+    - text: |
+        For a non-vegetarian morning snack in the proliferative diet on Tuesday, you can have:
+        - Hard-Boiled Eggs
+        - Grilled Turkey Slices
+        - Chicken Salad with Avocado
+        - Tuna Salad
+        - Fish Cutlet.
+
+  utter_proliferative_tuesday_nonvegetarian_lunch:
+    - text: |
+        For non-vegetarian lunch in the proliferative diet on Tuesday, you can have:
+        - Grilled Salmon with Steamed Veggies
+        - Baked Fish with Brown Rice
+        - Grilled Chicken with Quinoa
+        - Chicken Stew with Sweet Potato
+        - Baked Turkey with Vegetables.
+
+  utter_proliferative_tuesday_nonvegetarian_midday_snack:
+    - text: |
+        For a non-vegetarian midday snack in the proliferative diet on Tuesday, you can have:
+        - Tuna Lettuce Wraps
+        - Grilled Chicken Skewers
+        - Boiled Egg with Paprika
+        - Chicken Soup
+        - Grilled Prawns.
+
+  utter_proliferative_tuesday_nonvegetarian_dinner:
+    - text: |
+        For non-vegetarian dinner in the proliferative diet on Tuesday, you can have:
+        - Grilled Mutton with Roasted Vegetables
+        - Chicken Pulao
+        - Fish Moilee with Brown Rice
+        - Grilled Turkey with Veggies
+        - Prawns with Garlic Butter.
+  utter_proliferative_tuesday_vegan_breakfast:
+    - text: |
+        For vegan breakfast in the proliferative diet on Tuesday, you can have:
+        - Millet Porridge with Chia Seeds
+        - Chia Pudding with Almond Milk
+        - Tofu Scramble with Kale
+        - Quinoa Upma with Vegetables
+        - Oats Pancakes with Blueberries.
+
+  utter_proliferative_tuesday_vegan_morning_snack:
+    - text: |
+        For a vegan morning snack in the proliferative diet on Tuesday, you can have:
+        - Mixed Nuts (Almonds, Walnuts, Cashews)
+        - Sliced Pear with Lemon
+        - Roasted Pumpkin Seeds
+        - Cucumber and Carrot Sticks with Hummus
+        - Fruit Salad with Guava.
+
+  utter_proliferative_tuesday_vegan_lunch:
+    - text: |
+        For vegan lunch in the proliferative diet on Tuesday, you can have:
+        - Chickpea and Avocado Salad
+        - Vegetable Brown Rice Pulao
+        - Tofu and Veggie Stir Fry with Brown Rice
+        - Quinoa Salad with Roasted Vegetables
+        - Mixed Dal Soup with Whole Wheat Bread.
+
+  utter_proliferative_tuesday_vegan_midday_snack:
+    - text: |
+        For a vegan midday snack in the proliferative diet on Tuesday, you can have:
+        - Steamed Edamame
+        - Masala Roasted Peanuts
+        - Apple Slices with Almond Butter
+        - Coconut Water with Chia Seeds
+        - Roasted Sunflower Seeds.
+
+  utter_proliferative_tuesday_vegan_dinner:
+    - text: |
+        For vegan dinner in the proliferative diet on Tuesday, you can have:
+        - Stir-Fried Tofu with Broccoli
+        - Vegan Lentil Soup
+        - Sweet Potato and Lentil Stew
+        - Stuffed Bell Peppers with Millet
+        - Vegetable Stir Fry with Soba Noodles.
+  utter_proliferative_wednesday_vegetarian_breakfast:
+    - text: |
+        For vegetarian breakfast in the proliferative diet on Wednesday, you can have:
+        - Kodo Millet Upma
+        - Methi Paratha with Curd
+        - Ragi Idli with Sambar
+        - Vegetable Poha
+        - Quinoa Poha.
+
+  utter_proliferative_wednesday_vegetarian_morning_snack:
+    - text: |
+        For a vegetarian morning snack in the proliferative diet on Wednesday, you can have:
+        - Roasted Makhana
+        - Almonds (7-8 pieces)
+        - Carrot Sticks with Lemon
+        - Roasted Chana
+        - Cucumber with Mint Raita.
+
+  utter_proliferative_wednesday_vegetarian_lunch:
+    - text: |
+        For vegetarian lunch in the proliferative diet on Wednesday, you can have:
+        - Quinoa Pulao with Spinach
+        - Vegetable Khichdi with Vegetable Raita
+        - Methi Thepla with Vegetable Raita
+        - Quinoa with Stir-Fried Veggies
+        - Vegetable Sambar with Millet.
+
+  utter_proliferative_wednesday_vegetarian_midday_snack:
+    - text: |
+        For a vegetarian midday snack in the proliferative diet on Wednesday, you can have:
+        - Roasted Peanuts
+        - Vegetable Soup
+        - Apple Slices
+        - Fresh Coconut Water
+        - Roasted Chana.
+
+  utter_proliferative_wednesday_vegetarian_dinner:
+    - text: |
+        For vegetarian dinner in the proliferative diet on Wednesday, you can have:
+        - Vegetable Stir Fry with Bajra Roti
+        - Moong Dal Khichdi
+        - Brown Rice with Vegetable Curry
+        - Quinoa Vegetable Curry
+        - Millet Roti with Dal.
+  utter_proliferative_wednesday_nonvegetarian_breakfast:
+    - text: |
+        For non-vegetarian breakfast in the proliferative diet on Wednesday, you can have:
+        - Scrambled Eggs with Spinach
+        - Grilled Chicken Sausage with Vegetables
+        - Fish Curry with Barley
+        - Poached Eggs on Multigrain Toast
+        - Lean Meat Cutlets with Millet.
+
+  utter_proliferative_wednesday_nonvegetarian_morning_snack:
+    - text: |
+        For a non-vegetarian morning snack in the proliferative diet on Wednesday, you can have:
+        - Grilled Fish Fingers
+        - Hard-Boiled Eggs
+        - Tuna Salad
+        - Grilled Chicken Skewers
+        - Chicken Broth.
+
+  utter_proliferative_wednesday_nonvegetarian_lunch:
+    - text: |
+        For non-vegetarian lunch in the proliferative diet on Wednesday, you can have:
+        - Grilled Chicken Salad
+        - Grilled Salmon with Steamed Veggies
+        - Fish Curry with Brown Rice
+        - Lean Meat Daliya
+        - Chicken Stew with Sweet Potato.
+
+  utter_proliferative_wednesday_nonvegetarian_midday_snack:
+    - text: |
+        For a non-vegetarian midday snack in the proliferative diet on Wednesday, you can have:
+        - Grilled Chicken with Bell Peppers
+        - Boiled Egg with Black Salt
+        - Fish Salad with Olive Oil Dressing
+        - Chicken Broth with Herbs
+        - Grilled Prawns.
+
+  utter_proliferative_wednesday_nonvegetarian_dinner:
+    - text: |
+        For non-vegetarian dinner in the proliferative diet on Wednesday, you can have:
+        - Grilled Mutton with Roasted Vegetables
+        - Chicken Pulao
+        - Fish Moilee with Brown Rice
+        - Grilled Turkey with Veggies
+        - Prawns with Garlic Butter.
+  utter_proliferative_wednesday_vegan_breakfast:
+    - text: |
+        For vegan breakfast in the proliferative diet on Wednesday, you can have:
+        - Millet Porridge with Chia Seeds
+        - Red Rice Idli with Sambar
+        - Sprouted Moong Salad with Lemon
+        - Avocado Toast on Whole Grain Bread
+        - Tofu Scramble with Kale.
+
+  utter_proliferative_wednesday_vegan_morning_snack:
+    - text: |
+        For a vegan morning snack in the proliferative diet on Wednesday, you can have:
+        - Mixed Nuts (Almonds, Walnuts)
+        - Carrot and Cucumber Sticks with Hummus
+        - Sliced Pear with Lemon
+        - Roasted Pumpkin Seeds
+        - Fresh Guava.
+
+  utter_proliferative_wednesday_vegan_lunch:
+    - text: |
+        For vegan lunch in the proliferative diet on Wednesday, you can have:
+        - Tofu and Veggie Stir Fry with Brown Rice
+        - Zucchini Stir Fry with Quinoa
+        - Stuffed Bell Peppers with Millet
+        - Mixed Dal Soup with Whole Wheat Bread
+        - Chickpea Salad with Olive Oil.
+
+  utter_proliferative_wednesday_vegan_midday_snack:
+    - text: |
+        For a vegan midday snack in the proliferative diet on Wednesday, you can have:
+        - Steamed Edamame
+        - Masala Roasted Peanuts
+        - Apple Slices with Almond Butter
+        - Coconut Water with Chia Seeds
+  utter_proliferative_wednesday_vegan_dinner:
+    - text:  |
+        For vegan dinner in the proliferative diet on Wednesday, you can have:
+        - Stir-Fried Tofu with Broccoli
+        - Vegan Spinach Soup with Quinoa
+        - Sweet Potato and Lentil Stew
+        - Stuffed Bell Peppers with Millet
+        - Vegetable Stir Fry with Soba Noodles.
+  utter_proliferative_thursday_vegetarian_breakfast:
+    - text: |
+        For vegetarian breakfast in the proliferative diet on Thursday, you can have:
+        - Methi Paratha with Curd
+        - Ragi Dosa with Coconut Chutney
+        - Barley Upma with Vegetables
+        - Kodo Millet Porridge
+  utter_proliferative_thursday_vegetarian_morning_snack:
+    - text: |
+        For a vegetarian morning snack in the proliferative diet on Thursday, you can have:
+        - Roasted Chana
+        - Almonds (7-8 pieces)
+        - Carrot Sticks with Lemon
+        - Roasted Makhana
+        - Sliced Papaya.
+        - Ragi Dosa with Coconut Chutney
+  utter_proliferative_thursday_vegetarian_lunch:
+    - text: |
+        For vegetarian lunch in the proliferative diet on Thursday, you can have:
+        - Vegetable Sambar with Millet
+        - Brown Rice with Rajma Curry
+        - Vegetable Daliya
+        - Quinoa Pulao
+        - Moong Dal Khichdi.
+  utter_proliferative_thursday_vegetarian_midday_snack:
+    - text: |
+        For a vegetarian midday snack in the proliferative diet on Thursday, you can have:
+        - Roasted Peanuts
+        - Buttermilk
+        - Apple Slices
+        - Vegetable Soup
+        - Roasted Chana.
+  utter_proliferative_thursday_vegetarian_dinner:
+    - text: |
+        For vegetarian dinner in the proliferative diet on Thursday, you can have:
+        - Vegetable Daliya
+        - Moong Dal Khichdi
+        - Quinoa Vegetable Curry
+        - Millet Roti with Dal
+  utter_proliferative_thursday_nonvegetarian_breakfast:
+    - text: |
+        For non-vegetarian breakfast in the proliferative diet on Thursday, you can have:
+        - Poached Eggs with Spinach
+        - Scrambled Eggs with Tomato
+        - Grilled Chicken with Quinoa
+        - Chicken Keema Upma
+  utter_proliferative_thursday_nonvegetarian_morning_snack:
+    - text: |
+        For a non-vegetarian morning snack in the proliferative diet on Thursday, you can have:
+        - Boiled Egg White
+        - Grilled Chicken Strips
+        - Tuna Salad
+        - Protein Smoothie
+        - Fish Cutlet.
+  utter_proliferative_thursday_nonvegetarian_lunch:
+    - text: |
+        For non-vegetarian lunch in the proliferative diet on Thursday, you can have:
+        - Grilled Chicken Salad
+        - Baked Fish with Brown Rice
+        - Lean Meat Daliya
+        - Tandoori Chicken with Quinoa
+        - Fish Curry with Barley.
+  utter_proliferative_thursday_nonvegetarian_midday_snack:
+    - text: |
+        For a non-vegetarian midday snack in the proliferative diet on Thursday, you can have:
+        - Chicken Soup
+        - Tuna Salad
+        - Boiled Egg
+        - Grilled Prawns
+        - Protein Smoothie.
+  utter_proliferative_thursday_nonvegetarian_dinner:
+    - text: |
+        For non-vegetarian dinner in the proliferative diet on Thursday, you can have:
+        - Baked Cod with Vegetable Stir Fry
+        - Lean Mutton Curry
+        - Chicken Pulao
+        - Fish Moilee
+  utter_proliferative_thursday_vegan_breakfast:
+    - text: |
+        For vegan breakfast in the proliferative diet on Thursday, you can have:
+        - Chia Pudding with Almond Milk and Berries
+        - Avocado Toast on Multigrain Bread
+        - Millet and Spinach Smoothie
+        - Oats and Banana Pancakes
+        - Quinoa Upma with Tofu.
+  utter_proliferative_thursday_vegan_morning_snack:
+    - text: |
+        For a vegan morning snack in the proliferative diet on Thursday, you can have:
+        - Mixed Nuts (Almonds, Walnuts, Cashews)
+        - Sliced Pear with Lemon
+        - Roasted Pumpkin Seeds
+        - Carrot and Cucumber Sticks with Hummus
+        - Fruit Salad with Guava.
+  utter_proliferative_thursday_vegan_lunch:
+    - text: |
+        For vegan lunch in the proliferative diet on Thursday, you can have:
+        - Vegetable Brown Rice Pulao
+        - Quinoa Salad with Roasted Vegetables
+        - Mixed Dal Soup with Whole Wheat Bread
+        - Stuffed Capsicum with Millet
+        - Vegetable Barley Soup.
+  utter_proliferative_thursday_vegan_midday_snack:
+    - text: |
+        For a vegan midday snack in the proliferative diet on Thursday, you can have:
+        - Coconut Water with Chia Seeds
+        - Steamed Edamame
+        - Masala Roasted Peanuts
+        - Apple Slices with Almond Butter
+        - Homemade Protein Bar.
+  utter_proliferative_thursday_vegan_dinner:
+    - text: |
+        For vegan dinner in the proliferative diet on Thursday, you can have:
+        - Stir-Fried Vegetables with Tofu
+        - Lentil Curry with Brown Rice
+        - Sweet Potato Mash with Grilled Veggies
+        - Stuffed Bell Peppers with Millet
+        - Vegetable Stir Fry with Soba Noodles.
+        - Fruit Salad with Guava.
+  utter_proliferative_friday_vegetarian_breakfast:
+    - text: |
+        For vegetarian breakfast in the proliferative diet on Friday, you can have:
+        - Moong Dal Cheela with Mint Chutney
+        - Ragi Idli with Sambar
+        - Vegetable Poha with Peanuts
+        - Quinoa Upma with Vegetables
+        - Besan Chilla with Curd.
+
+  utter_proliferative_friday_vegetarian_morning_snack:
+    - text: |
+        For a vegetarian morning snack in the proliferative diet on Friday, you can have:
+        - Roasted Makhana
+        - Almonds (7-8 pieces)
+        - Cucumber with Mint Raita
+        - Sprouted Moong with Lemon
+        - Roasted Chana.
+
+  utter_proliferative_friday_vegetarian_lunch:
+    - text: |
+        For vegetarian lunch in the proliferative diet on Friday, you can have:
+        - Dal Khichdi with Vegetable Raita
+        - Brown Rice with Rajma Curry
+        - Millet Roti with Palak Dal
+        - Quinoa Pulao with Cucumber Raita
+        - Vegetable Daliya.
+
+  utter_proliferative_friday_vegetarian_midday_snack:
+    - text: |
+        For a vegetarian midday snack in the proliferative diet on Friday, you can have:
+        - Buttermilk
+        - Roasted Peanuts
+        - Apple Slices
+        - Fresh Coconut Water
+        - Vegetable Soup.
+
+  utter_proliferative_friday_vegetarian_dinner:
+    - text: |
+        For vegetarian dinner in the proliferative diet on Friday, you can have:
+        - Moong Dal Khichdi
+        - Brown Rice with Mixed Vegetable Curry
+        - Quinoa Vegetable Curry
+        - Millet Roti with Dal
+        - Stir-Fried Vegetables with Bajra Roti.
+  utter_proliferative_friday_nonvegetarian_breakfast:
+    - text: |
+        For non-vegetarian breakfast in the proliferative diet on Friday, you can have:
+        - Scrambled Eggs with Spinach
+        - Grilled Chicken with Quinoa
+        - Poached Eggs with Whole Wheat Toast
+        - Chicken Keema Upma
+        - Egg Bhurji with Kale.
+
+  utter_proliferative_friday_nonvegetarian_morning_snack:
+    - text: |
+        For a non-vegetarian morning snack in the proliferative diet on Friday, you can have:
+        - Boiled Egg Whites
+        - Grilled Chicken Strips
+        - Hung Curd with Almonds
+        - Fish Cutlet
+        - Roasted Pumpkin Seeds.
+
+  utter_proliferative_friday_nonvegetarian_lunch:
+    - text: |
+        For non-vegetarian lunch in the proliferative diet on Friday, you can have:
+        - Grilled Chicken Salad
+        - Baked Fish with Brown Rice
+        - Lean Meat Daliya
+        - Egg White Curry with Whole Wheat Roti
+        - Tandoori Chicken with Quinoa.
+
+  utter_proliferative_friday_nonvegetarian_midday_snack:
+    - text: |
+        For a non-vegetarian midday snack in the proliferative diet on Friday, you can have:
+        - Chicken Soup
+        - Tuna Salad
+        - Boiled Egg with Paprika
+        - Grilled Prawns
+        - Protein Smoothie.
+
+  utter_proliferative_friday_nonvegetarian_dinner:
+    - text: |
+        For non-vegetarian dinner in the proliferative diet on Friday, you can have:
+        - Baked Cod with Vegetable Stir Fry
+        - Lean Mutton Curry
+        - Chicken Pulao
+        - Fish Moilee with Brown Rice
+        - Turkey Meatballs with Roasted Vegetables.
+  utter_proliferative_friday_vegan_breakfast:
+    - text: |
+        For vegan breakfast in the proliferative diet on Friday, you can have:
+        - Chia Pudding with Almond Milk and Berries
+        - Oats Pancakes with Banana
+        - Tofu Scramble with Spinach
+        - Quinoa Upma with Vegetables
+        - Millet Porridge with Chia Seeds.
+
+  utter_proliferative_friday_vegan_morning_snack:
+    - text: |
+        For a vegan morning snack in the proliferative diet on Friday, you can have:
+        - Mixed Nuts (Almonds, Walnuts, Cashews)
+        - Roasted Chickpeas
+        - Carrot and Cucumber Sticks with Hummus
+        - Fruit Salad with Guava
+        - Sunflower Seeds.
+
+  utter_proliferative_friday_vegan_lunch:
+    - text: |
+        For vegan lunch in the proliferative diet on Friday, you can have:
+        - Vegetable Brown Rice Pulao
+        - Quinoa Salad with Roasted Vegetables
+        - Mixed Dal Soup with Whole Wheat Bread
+        - Stuffed Bell Peppers with Millet
+        - Zucchini Stir Fry with Tofu.
+
+  utter_proliferative_friday_vegan_midday_snack:
+    - text: |
+        For a vegan midday snack in the proliferative diet on Friday, you can have:
+        - Coconut Water with Chia Seeds
+        - Steamed Edamame
+        - Masala Roasted Peanuts
+        - Apple Slices with Almond Butter
+        - Homemade Vegan Protein Bar.
+
+  utter_proliferative_friday_vegan_dinner:
+    - text: |
+        For vegan dinner in the proliferative diet on Friday, you can have:
+        - Stir-Fried Vegetables with Tofu
+        - Lentil Curry with Brown Rice
+        - Sweet Potato Mash with Grilled Veggies
+        - Stuffed Bell Peppers with Millet
+        - Vegetable Stir Fry with Soba Noodles.
+  utter_proliferative_saturday_vegetarian_breakfast:
+    - text: |
+        For vegetarian breakfast in the proliferative diet on Saturday, you can have:
+        - Moong Dal Cheela with Mint Chutney
+        - Ragi Idli with Sambar
+        - Vegetable Poha with Peanuts
+        - Quinoa Upma with Vegetables
+        - Besan Chilla with Curd.
+
+  utter_proliferative_saturday_vegetarian_morning_snack:
+    - text: |
+        For a vegetarian morning snack in the proliferative diet on Saturday, you can have:
+        - Roasted Makhana
+        - Almonds (7-8 pieces)
+        - Cucumber with Mint Raita
+        - Sprouted Moong with Lemon
+        - Roasted Chana.
+
+  utter_proliferative_saturday_vegetarian_lunch:
+    - text: |
+        For vegetarian lunch in the proliferative diet on Saturday, you can have:
+        - Dal Khichdi with Vegetable Raita
+        - Brown Rice with Rajma Curry
+        - Millet Roti with Palak Dal
+        - Quinoa Pulao with Cucumber Raita
+        - Vegetable Daliya.
+
+  utter_proliferative_saturday_vegetarian_midday_snack:
+    - text: |
+        For a vegetarian midday snack in the proliferative diet on Saturday, you can have:
+        - Buttermilk
+        - Roasted Peanuts
+        - Apple Slices
+        - Fresh Coconut Water
+        - Vegetable Soup.
+
+  utter_proliferative_saturday_vegetarian_dinner:
+    - text: |
+        For vegetarian dinner in the proliferative diet on Saturday, you can have:
+        - Moong Dal Khichdi
+        - Brown Rice with Mixed Vegetable Curry
+        - Quinoa Vegetable Curry
+        - Millet Roti with Dal
+        - Stir-Fried Vegetables with Bajra Roti.
+  utter_proliferative_saturday_nonvegetarian_breakfast:
+    - text: |
+        For non-vegetarian breakfast in the proliferative diet on Saturday, you can have:
+        - Scrambled Eggs with Spinach
+        - Grilled Chicken with Quinoa
+        - Poached Eggs with Whole Wheat Toast
+        - Chicken Keema Upma
+        - Egg Bhurji with Kale.
+
+  utter_proliferative_saturday_nonvegetarian_morning_snack:
+    - text: |
+        For a non-vegetarian morning snack in the proliferative diet on Saturday, you can have:
+        - Boiled Egg Whites
+        - Grilled Chicken Strips
+        - Hung Curd with Almonds
+        - Fish Cutlet
+        - Roasted Pumpkin Seeds.
+
+  utter_proliferative_saturday_nonvegetarian_lunch:
+    - text: |
+        For non-vegetarian lunch in the proliferative diet on Saturday, you can have:
+        - Grilled Chicken Salad
+        - Baked Fish with Brown Rice
+        - Lean Meat Daliya
+        - Egg White Curry with Whole Wheat Roti
+        - Tandoori Chicken with Quinoa.
+
+  utter_proliferative_saturday_nonvegetarian_midday_snack:
+    - text: |
+        For a non-vegetarian midday snack in the proliferative diet on Saturday, you can have:
+        - Chicken Soup
+        - Tuna Salad
+        - Boiled Egg with Paprika
+        - Grilled Prawns
+        - Protein Smoothie.
+
+  utter_proliferative_saturday_nonvegetarian_dinner:
+    - text: |
+        For non-vegetarian dinner in the proliferative diet on Saturday, you can have:
+        - Baked Cod with Vegetable Stir Fry
+        - Lean Mutton Curry
+        - Chicken Pulao
+        - Fish Moilee with Brown Rice
+        - Turkey Meatballs with Roasted Vegetables.
+  utter_proliferative_saturday_vegan_breakfast:
+    - text: |
+        For vegan breakfast in the proliferative diet on Saturday, you can have:
+        - Chia Pudding with Almond Milk and Berries
+        - Oats Pancakes with Banana
+        - Tofu Scramble with Spinach
+        - Quinoa Upma with Vegetables
+        - Millet Porridge with Chia Seeds.
+
+  utter_proliferative_saturday_vegan_morning_snack:
+    - text: |
+        For a vegan morning snack in the proliferative diet on Saturday, you can have:
+        - Mixed Nuts (Almonds, Walnuts, Cashews)
+        - Roasted Chickpeas
+        - Carrot and Cucumber Sticks with Hummus
+        - Fruit Salad with Guava
+        - Sunflower Seeds.
+
+  utter_proliferative_saturday_vegan_lunch:
+    - text: |
+        For vegan lunch in the proliferative diet on Saturday, you can have:
+        - Vegetable Brown Rice Pulao
+        - Quinoa Salad with Roasted Vegetables
+        - Mixed Dal Soup with Whole Wheat Bread
+        - Stuffed Bell Peppers with Millet
+        - Zucchini Stir Fry with Tofu.
+
+  utter_proliferative_saturday_vegan_midday_snack:
+    - text: |
+        For a vegan midday snack in the proliferative diet on Saturday, you can have:
+        - Coconut Water with Chia Seeds
+        - Steamed Edamame
+        - Masala Roasted Peanuts
+        - Apple Slices with Almond Butter
+        - Homemade Vegan Protein Bar.
+
+  utter_proliferative_saturday_vegan_dinner:
+    - text: |
+        For vegan dinner in the proliferative diet on Saturday, you can have:
+        - Stir-Fried Vegetables with Tofu
+        - Lentil Curry with Brown Rice
+        - Sweet Potato Mash with Grilled Veggies
+        - Stuffed Bell Peppers with Millet
+        - Vegetable Stir Fry with Soba Noodles.
+  utter_proliferative_sunday_vegetarian_breakfast:
+    - text: |
+        For vegetarian breakfast in the proliferative diet on Sunday, you can have:
+        - Ragi Dosa with Coconut Chutney
+        - Methi Paratha with Curd
+        - Vegetable Poha with Peanuts
+        - Bajra Upma with Vegetables
+        - Moong Dal Cheela with Mint Chutney.
+
+  utter_proliferative_sunday_vegetarian_morning_snack:
+    - text: |
+        For a vegetarian morning snack in the proliferative diet on Sunday, you can have:
+        - Roasted Makhana
+        - Almonds (7-8 pieces)
+        - Carrot Sticks with Lemon
+        - Roasted Chana
+        - Cucumber with Mint Raita.
+
+  utter_proliferative_sunday_vegetarian_lunch:
+    - text: |
+        For vegetarian lunch in the proliferative diet on Sunday, you can have:
+        - Quinoa Pulao with Spinach
+        - Vegetable Khichdi with Vegetable Raita
+        - Methi Thepla with Vegetable Raita
+        - Quinoa with Stir-Fried Veggies
+        - Vegetable Sambar with Millet.
+
+  utter_proliferative_sunday_vegetarian_midday_snack:
+    - text: |
+        For a vegetarian midday snack in the proliferative diet on Sunday, you can have:
+        - Roasted Peanuts
+        - Vegetable Soup
+        - Apple Slices
+        - Fresh Coconut Water
+        - Roasted Chana.
+
+  utter_proliferative_sunday_vegetarian_dinner:
+    - text: |
+        For vegetarian dinner in the proliferative diet on Sunday, you can have:
+        - Vegetable Stir Fry with Bajra Roti
+        - Moong Dal Khichdi
+        - Brown Rice with Vegetable Curry
+        - Quinoa Vegetable Curry
+        - Millet Roti with Dal.
+  utter_proliferative_sunday_nonvegetarian_breakfast:
+    - text: |
+        For non-vegetarian breakfast in the proliferative diet on Sunday, you can have:
+        - Scrambled Eggs with Spinach
+        - Grilled Chicken with Quinoa
+        - Poached Eggs with Whole Wheat Toast
+        - Chicken Keema Upma
+        - Egg Bhurji with Kale.
+
+  utter_proliferative_sunday_nonvegetarian_morning_snack:
+    - text: |
+        For a non-vegetarian morning snack in the proliferative diet on Sunday, you can have:
+        - Boiled Egg Whites
+        - Grilled Chicken Strips
+        - Hung Curd with Almonds
+        - Fish Cutlet
+        - Roasted Pumpkin Seeds.
+
+  utter_proliferative_sunday_nonvegetarian_lunch:
+    - text: |
+        For non-vegetarian lunch in the proliferative diet on Sunday, you can have:
+        - Grilled Chicken Salad
+        - Baked Fish with Brown Rice
+        - Lean Meat Daliya
+        - Egg White Curry with Whole Wheat Roti
+        - Tandoori Chicken with Quinoa.
+
+  utter_proliferative_sunday_nonvegetarian_midday_snack:
+    - text: |
+        For a non-vegetarian midday snack in the proliferative diet on Sunday, you can have:
+        - Chicken Soup
+        - Tuna Salad
+        - Boiled Egg with Paprika
+        - Grilled Prawns
+        - Protein Smoothie.
+
+  utter_proliferative_sunday_nonvegetarian_dinner:
+    - text: |
+        For non-vegetarian dinner in the proliferative diet on Sunday, you can have:
+        - Baked Cod with Vegetable Stir Fry
+        - Lean Mutton Curry
+        - Chicken Pulao
+        - Fish Moilee with Brown Rice
+        - Turkey Meatballs with Roasted Vegetables.
+  utter_proliferative_sunday_vegan_breakfast:
+    - text: |
+        For vegan breakfast in the proliferative diet on Sunday, you can have:
+        - Chia Pudding with Almond Milk and Berries
+        - Oats Pancakes with Banana
+        - Tofu Scramble with Spinach
+        - Quinoa Upma with Vegetables
+        - Millet Porridge with Chia Seeds.
+
+  utter_proliferative_sunday_vegan_morning_snack:
+    - text: |
+        For a vegan morning snack in the proliferative diet on Sunday, you can have:
+        - Mixed Nuts (Almonds, Walnuts, Cashews)
+        - Roasted Chickpeas
+        - Carrot and Cucumber Sticks with Hummus
+        - Fruit Salad with Guava
+        - Sunflower Seeds.
+
+  utter_proliferative_sunday_vegan_lunch:
+    - text: |
+        For vegan lunch in the proliferative diet on Sunday, you can have:
+        - Vegetable Brown Rice Pulao
+        - Quinoa Salad with Roasted Vegetables
+        - Mixed Dal Soup with Whole Wheat Bread
+        - Stuffed Bell Peppers with Millet
+        - Zucchini Stir Fry with Tofu.
+
+  utter_proliferative_sunday_vegan_midday_snack:
+    - text: |
+        For a vegan midday snack in the proliferative diet on Sunday, you can have:
+        - Coconut Water with Chia Seeds
+        - Steamed Edamame
+        - Masala Roasted Peanuts
+        - Apple Slices with Almond Butter
+        - Homemade Vegan Protein Bar.
+
+  utter_proliferative_sunday_vegan_dinner:
+    - text: |
+        For vegan dinner in the proliferative diet on Sunday, you can have:
+        - Stir-Fried Vegetables with Tofu
+        - Lentil Curry with Brown Rice
+        - Sweet Potato Mash with Grilled Veggies
+        - Stuffed Bell Peppers with Millet
+        - Vegetable Stir Fry with Soba Noodles.
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

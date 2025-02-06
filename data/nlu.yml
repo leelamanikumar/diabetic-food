@@ -1,0 +1,668 @@
+
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - hey dude
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - have a nice day
+    - see you around
+
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - of course
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - never
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - I am feeling very good
+    - I am great
+    - I am amazing
+
+- intent: mood_unhappy
+  examples: |
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+
+- intent: ask_proliferative_monday_vegetarian_breakfast
+  examples: |
+    - What is the vegetarian breakfast for proliferative on Monday?
+    - Tell me the Monday breakfast for proliferative (vegetarian).
+    - What should I eat for breakfast on Monday in the proliferative vegetarian diet?
+
+- intent: ask_proliferative_monday_vegetarian_morning_snack
+  examples: |
+    - What is the vegetarian morning snack for proliferative on Monday?
+    - What can I eat for a morning snack on Monday in the proliferative vegetarian diet?
+    - Suggest a Monday morning snack for proliferative (vegetarian).
+
+- intent: ask_proliferative_monday_vegetarian_lunch
+  examples: |
+    - What is the vegetarian lunch for proliferative on Monday?
+    - Tell me the Monday lunch for proliferative (vegetarian).
+    - What should I eat for lunch on Monday in the proliferative vegetarian diet?
+
+- intent: ask_proliferative_monday_vegetarian_midday_snack
+  examples: |
+    - What is the vegetarian midday snack for proliferative on Monday?
+    - What can I eat for a midday snack on Monday in the proliferative vegetarian diet?
+    - Suggest a Monday midday snack for proliferative (vegetarian).
+
+- intent: ask_proliferative_monday_vegetarian_dinner
+  examples: |
+    - What is the vegetarian dinner for proliferative on Monday?
+    - Tell me the Monday dinner for proliferative (vegetarian).
+    - What should I eat for dinner on Monday in the proliferative vegetarian diet?
+- intent: ask_proliferative_monday_nonvegetarian_breakfast
+  examples: |
+    - What is the non-vegetarian breakfast for proliferative on Monday?
+    - Tell me the Monday breakfast for proliferative (non-vegetarian).
+    - What should I eat for breakfast on Monday in the proliferative non-vegetarian diet?
+
+- intent: ask_proliferative_monday_nonvegetarian_morning_snack
+  examples: |
+    - What is the non-vegetarian morning snack for proliferative on Monday?
+    - What can I eat for a morning snack on Monday in the proliferative non-vegetarian diet?
+    - Suggest a Monday morning snack for proliferative (non-vegetarian).
+
+- intent: ask_proliferative_monday_nonvegetarian_lunch
+  examples: |
+    - What is the non-vegetarian lunch for proliferative on Monday?
+    - Tell me the Monday lunch for proliferative (non-vegetarian).
+    - What should I eat for lunch on Monday in the proliferative non-vegetarian diet?
+
+- intent: ask_proliferative_monday_nonvegetarian_midday_snack
+  examples: |
+    - What is the non-vegetarian midday snack for proliferative on Monday?
+    - What can I eat for a midday snack on Monday in the proliferative non-vegetarian diet?
+    - Suggest a Monday midday snack for proliferative (non-vegetarian).
+
+- intent: ask_proliferative_monday_nonvegetarian_dinner
+  examples: |
+    - What is the non-vegetarian dinner for proliferative on Monday?
+    - Tell me the Monday dinner for proliferative (non-vegetarian).
+    - What should I eat for dinner on Monday in the proliferative non-vegetarian diet?
+- intent: ask_proliferative_monday_vegan_breakfast
+  examples: |
+    - What is the vegan breakfast for proliferative on Monday?
+    - Tell me the Monday breakfast for proliferative (vegan).
+    - What should I eat for breakfast on Monday in the proliferative vegan diet?
+
+- intent: ask_proliferative_monday_vegan_morning_snack
+  examples: |
+    - What is the vegan morning snack for proliferative on Monday?
+    - What can I eat for a morning snack on Monday in the proliferative vegan diet?
+    - Suggest a Monday morning snack for proliferative (vegan).
+
+- intent: ask_proliferative_monday_vegan_lunch
+  examples: |
+    - What is the vegan lunch for proliferative on Monday?
+    - Tell me the Monday lunch for proliferative (vegan).
+    - What should I eat for lunch on Monday in the proliferative vegan diet?
+
+- intent: ask_proliferative_monday_vegan_midday_snack
+  examples: |
+    - What is the vegan midday snack for proliferative on Monday?
+    - What can I eat for a midday snack on Monday in the proliferative vegan diet?
+    - Suggest a Monday midday snack for proliferative (vegan).
+
+- intent: ask_proliferative_monday_vegan_dinner
+  examples: |
+    - What is the vegan dinner for proliferative on Monday?
+    - Tell me the Monday dinner for proliferative (vegan).
+    - What should I eat for dinner on Monday in the proliferative vegan diet?
+- intent: ask_proliferative_tuesday_vegetarian_breakfast
+  examples: |
+    - What is the vegetarian breakfast for proliferative on Tuesday?
+    - Tell me the Tuesday breakfast for proliferative (vegetarian).
+    - What should I eat for breakfast on Tuesday in the proliferative vegetarian diet?
+
+- intent: ask_proliferative_tuesday_vegetarian_morning_snack
+  examples: |
+    - What is the vegetarian morning snack for proliferative on Tuesday?
+    - What can I eat for a morning snack on Tuesday in the proliferative vegetarian diet?
+    - Suggest a Tuesday morning snack for proliferative (vegetarian).
+
+- intent: ask_proliferative_tuesday_vegetarian_lunch
+  examples: |
+    - What is the vegetarian lunch for proliferative on Tuesday?
+    - Tell me the Tuesday lunch for proliferative (vegetarian).
+    - What should I eat for lunch on Tuesday in the proliferative vegetarian diet?
+
+- intent: ask_proliferative_tuesday_vegetarian_midday_snack
+  examples: |
+    - What is the vegetarian midday snack for proliferative on Tuesday?
+    - What can I eat for a midday snack on Tuesday in the proliferative vegetarian diet?
+    - Suggest a Tuesday midday snack for proliferative (vegetarian).
+
+- intent: ask_proliferative_tuesday_vegetarian_dinner
+  examples: |
+    - What is the vegetarian dinner for proliferative on Tuesday?
+    - Tell me the Tuesday dinner for proliferative (vegetarian).
+    - What should I eat for dinner on Tuesday in the proliferative vegetarian diet?
+- intent: ask_proliferative_tuesday_nonvegetarian_breakfast
+  examples: |
+    - What is the non-vegetarian breakfast for proliferative on Tuesday?
+    - Tell me the Tuesday breakfast for proliferative (non-vegetarian).
+    - What should I eat for breakfast on Tuesday in the proliferative non-vegetarian diet?
+
+- intent: ask_proliferative_tuesday_nonvegetarian_morning_snack
+  examples: |
+    - What is the non-vegetarian morning snack for proliferative on Tuesday?
+    - What can I eat for a morning snack on Tuesday in the proliferative non-vegetarian diet?
+    - Suggest a Tuesday morning snack for proliferative (non-vegetarian).
+
+- intent: ask_proliferative_tuesday_nonvegetarian_lunch
+  examples: |
+    - What is the non-vegetarian lunch for proliferative on Tuesday?
+    - Tell me the Tuesday lunch for proliferative (non-vegetarian).
+    - What should I eat for lunch on Tuesday in the proliferative non-vegetarian diet?
+
+- intent: ask_proliferative_tuesday_nonvegetarian_midday_snack
+  examples: |
+    - What is the non-vegetarian midday snack for proliferative on Tuesday?
+    - What can I eat for a midday snack on Tuesday in the proliferative non-vegetarian diet?
+    - Suggest a Tuesday midday snack for proliferative (non-vegetarian).
+
+- intent: ask_proliferative_tuesday_nonvegetarian_dinner
+  examples: |
+    - What is the non-vegetarian dinner for proliferative on Tuesday?
+    - Tell me the Tuesday dinner for proliferative (non-vegetarian).
+    - What should I eat for dinner on Tuesday in the proliferative non-vegetarian diet?
+- intent: ask_proliferative_tuesday_vegan_breakfast
+  examples: |
+    - What is the vegan breakfast for proliferative on Tuesday?
+    - Tell me the Tuesday breakfast for proliferative (vegan).
+    - What should I eat for breakfast on Tuesday in the proliferative vegan diet?
+
+- intent: ask_proliferative_tuesday_vegan_morning_snack
+  examples: |
+    - What is the vegan morning snack for proliferative on Tuesday?
+    - What can I eat for a morning snack on Tuesday in the proliferative vegan diet?
+    - Suggest a Tuesday morning snack for proliferative (vegan).
+
+- intent: ask_proliferative_tuesday_vegan_lunch
+  examples: |
+    - What is the vegan lunch for proliferative on Tuesday?
+    - Tell me the Tuesday lunch for proliferative (vegan).
+    - What should I eat for lunch on Tuesday in the proliferative vegan diet?
+
+- intent: ask_proliferative_tuesday_vegan_midday_snack
+  examples: |
+    - What is the vegan midday snack for proliferative on Tuesday?
+    - What can I eat for a midday snack on Tuesday in the proliferative vegan diet?
+    - Suggest a Tuesday midday snack for proliferative (vegan).
+
+- intent: ask_proliferative_tuesday_vegan_dinner
+  examples: |
+    - What is the vegan dinner for proliferative on Tuesday?
+    - Tell me the Tuesday dinner for proliferative (vegan).
+    - What should I eat for dinner on Tuesday in the proliferative vegan diet?
+- intent: ask_proliferative_wednesday_vegetarian_breakfast
+  examples: |
+    - What is the vegetarian breakfast for proliferative on Wednesday?
+    - Tell me the Wednesday breakfast for proliferative (vegetarian).
+    - What should I eat for breakfast on Wednesday in the proliferative vegetarian diet?
+
+- intent: ask_proliferative_wednesday_vegetarian_morning_snack
+  examples: |
+    - What is the vegetarian morning snack for proliferative on Wednesday?
+    - What can I eat for a morning snack on Wednesday in the proliferative vegetarian diet?
+    - Suggest a Wednesday morning snack for proliferative (vegetarian).
+
+- intent: ask_proliferative_wednesday_vegetarian_lunch
+  examples: |
+    - What is the vegetarian lunch for proliferative on Wednesday?
+    - Tell me the Wednesday lunch for proliferative (vegetarian).
+    - What should I eat for lunch on Wednesday in the proliferative vegetarian diet?
+
+- intent: ask_proliferative_wednesday_vegetarian_midday_snack
+  examples: |
+    - What is the vegetarian midday snack for proliferative on Wednesday?
+    - What can I eat for a midday snack on Wednesday in the proliferative vegetarian diet?
+    - Suggest a Wednesday midday snack for proliferative (vegetarian).
+
+- intent: ask_proliferative_wednesday_vegetarian_dinner
+  examples: |
+    - What is the vegetarian dinner for proliferative on Wednesday?
+    - Tell me the Wednesday dinner for proliferative (vegetarian).
+    - What should I eat for dinner on Wednesday in the proliferative vegetarian diet?
+- intent: ask_proliferative_wednesday_nonvegetarian_breakfast
+  examples: |
+    - What is the non-vegetarian breakfast for proliferative on Wednesday?
+    - Tell me the Wednesday breakfast for proliferative (non-vegetarian).
+    - What should I eat for breakfast on Wednesday in the proliferative non-vegetarian diet?
+
+- intent: ask_proliferative_wednesday_nonvegetarian_morning_snack
+  examples: |
+    - What is the non-vegetarian morning snack for proliferative on Wednesday?
+    - What can I eat for a morning snack on Wednesday in the proliferative non-vegetarian diet?
+    - Suggest a Wednesday morning snack for proliferative (non-vegetarian).
+
+- intent: ask_proliferative_wednesday_nonvegetarian_lunch
+  examples: |
+    - What is the non-vegetarian lunch for proliferative on Wednesday?
+    - Tell me the Wednesday lunch for proliferative (non-vegetarian).
+    - What should I eat for lunch on Wednesday in the proliferative non-vegetarian diet?
+
+- intent: ask_proliferative_wednesday_nonvegetarian_midday_snack
+  examples: |
+    - What is the non-vegetarian midday snack for proliferative on Wednesday?
+    - What can I eat for a midday snack on Wednesday in the proliferative non-vegetarian diet?
+    - Suggest a Wednesday midday snack for proliferative (non-vegetarian).
+
+- intent: ask_proliferative_wednesday_nonvegetarian_dinner
+  examples: |
+    - What is the non-vegetarian dinner for proliferative on Wednesday?
+    - Tell me the Wednesday dinner for proliferative (non-vegetarian).
+    - What should I eat for dinner on Wednesday in the proliferative non-vegetarian diet?
+- intent: ask_proliferative_wednesday_vegan_breakfast
+  examples: |
+    - What is the vegan breakfast for proliferative on Wednesday?
+    - Tell me the Wednesday breakfast for proliferative (vegan).
+    - What should I eat for breakfast on Wednesday in the proliferative vegan diet?
+
+- intent: ask_proliferative_wednesday_vegan_morning_snack
+  examples: |
+    - What is the vegan morning snack for proliferative on Wednesday?
+    - What can I eat for a morning snack on Wednesday in the proliferative vegan diet?
+    - Suggest a Wednesday morning snack for proliferative (vegan).
+
+- intent: ask_proliferative_wednesday_vegan_lunch
+  examples: |
+    - What is the vegan lunch for proliferative on Wednesday?
+    - Tell me the Wednesday lunch for proliferative (vegan).
+    - What should I eat for lunch on Wednesday in the proliferative vegan diet?
+
+- intent: ask_proliferative_wednesday_vegan_midday_snack
+  examples: |
+    - What is the vegan midday snack for proliferative on Wednesday?
+    - What can I eat for a midday snack on Wednesday in the proliferative vegan diet?
+    - Suggest a Wednesday midday snack for proliferative (vegan).
+
+- intent: ask_proliferative_wednesday_vegan_dinner
+  examples: |
+    - What is the vegan dinner for proliferative on Wednesday?
+    - Tell me the Wednesday dinner for proliferative (vegan).
+    - What should I eat for dinner on Wednesday in the proliferative vegan diet?
+- intent: ask_proliferative_thursday_vegetarian_breakfast
+  examples: |
+    - What is the vegetarian breakfast for proliferative on Thursday?
+    - Tell me the Thursday breakfast for proliferative (vegetarian).
+    - What should I eat for breakfast on Thursday in the proliferative vegetarian diet?
+
+- intent: ask_proliferative_thursday_vegetarian_morning_snack
+  examples: |
+    - What is the vegetarian morning snack for proliferative on Thursday?
+    - What can I eat for a morning snack on Thursday in the proliferative vegetarian diet?
+    - Suggest a Thursday morning snack for proliferative (vegetarian).
+
+- intent: ask_proliferative_thursday_vegetarian_lunch
+  examples: |
+    - What is the vegetarian lunch for proliferative on Thursday?
+    - Tell me the Thursday lunch for proliferative (vegetarian).
+    - What should I eat for lunch on Thursday in the proliferative vegetarian diet?
+
+- intent: ask_proliferative_thursday_vegetarian_midday_snack
+  examples: |
+    - What is the vegetarian midday snack for proliferative on Thursday?
+    - What can I eat for a midday snack on Thursday in the proliferative vegetarian diet?
+    - Suggest a Thursday midday snack for proliferative (vegetarian).
+
+- intent: ask_proliferative_thursday_vegetarian_dinner
+  examples: |
+    - What is the vegetarian dinner for proliferative on Thursday?
+    - Tell me the Thursday dinner for proliferative (vegetarian).
+    - What should I eat for dinner on Thursday in the proliferative vegetarian diet?
+- intent: ask_proliferative_thursday_nonvegetarian_breakfast
+  examples: |
+    - What is the non-vegetarian breakfast for proliferative on Thursday?
+    - Tell me the Thursday breakfast for proliferative (non-vegetarian).
+    - What should I eat for breakfast on Thursday in the proliferative non-vegetarian diet?
+
+- intent: ask_proliferative_thursday_nonvegetarian_morning_snack
+  examples: |
+    - What is the non-vegetarian morning snack for proliferative on Thursday?
+    - What can I eat for a morning snack on Thursday in the proliferative non-vegetarian diet?
+    - Suggest a Thursday morning snack for proliferative (non-vegetarian).
+
+- intent: ask_proliferative_thursday_nonvegetarian_lunch
+  examples: |
+    - What is the non-vegetarian lunch for proliferative on Thursday?
+    - Tell me the Thursday lunch for proliferative (non-vegetarian).
+    - What should I eat for lunch on Thursday in the proliferative non-vegetarian diet?
+
+- intent: ask_proliferative_thursday_nonvegetarian_midday_snack
+  examples: |
+    - What is the non-vegetarian midday snack for proliferative on Thursday?
+    - What can I eat for a midday snack on Thursday in the proliferative non-vegetarian diet?
+    - Suggest a Thursday midday snack for proliferative (non-vegetarian).
+
+- intent: ask_proliferative_thursday_nonvegetarian_dinner
+  examples: |
+    - What is the non-vegetarian dinner for proliferative on Thursday?
+    - Tell me the Thursday dinner for proliferative (non-vegetarian).
+    - What should I eat for dinner on Thursday in the proliferative non-vegetarian diet?
+- intent: ask_proliferative_thursday_vegan_breakfast
+  examples: |
+    - What is the vegan breakfast for proliferative on Thursday?
+    - Tell me the Thursday breakfast for proliferative (vegan).
+    - What should I eat for breakfast on Thursday in the proliferative vegan diet?
+
+- intent: ask_proliferative_thursday_vegan_morning_snack
+  examples: |
+    - What is the vegan morning snack for proliferative on Thursday?
+    - What can I eat for a morning snack on Thursday in the proliferative vegan diet?
+    - Suggest a Thursday morning snack for proliferative (vegan).
+
+- intent: ask_proliferative_thursday_vegan_lunch
+  examples: |
+    - What is the vegan lunch for proliferative on Thursday?
+    - Tell me the Thursday lunch for proliferative (vegan).
+    - What should I eat for lunch on Thursday in the proliferative vegan diet?
+
+- intent: ask_proliferative_thursday_vegan_midday_snack
+  examples: |
+    - What is the vegan midday snack for proliferative on Thursday?
+    - What can I eat for a midday snack on Thursday in the proliferative vegan diet?
+    - Suggest a Thursday midday snack for proliferative (vegan).
+
+- intent: ask_proliferative_thursday_vegan_dinner
+  examples: |
+    - What is the vegan dinner for proliferative on Thursday?
+    - Tell me the Thursday dinner for proliferative (vegan).
+    - What should I eat for dinner on Thursday in the proliferative vegan diet?
+- intent: ask_proliferative_friday_vegetarian_breakfast
+  examples: |
+    - What is the vegetarian breakfast for proliferative on Friday?
+    - Tell me the Friday breakfast for proliferative (vegetarian).
+    - What should I eat for breakfast on Friday in the proliferative vegetarian diet?
+
+- intent: ask_proliferative_friday_vegetarian_morning_snack
+  examples: |
+    - What is the vegetarian morning snack for proliferative on Friday?
+    - What can I eat for a morning snack on Friday in the proliferative vegetarian diet?
+    - Suggest a Friday morning snack for proliferative (vegetarian).
+
+- intent: ask_proliferative_friday_vegetarian_lunch
+  examples: |
+    - What is the vegetarian lunch for proliferative on Friday?
+    - Tell me the Friday lunch for proliferative (vegetarian).
+    - What should I eat for lunch on Friday in the proliferative vegetarian diet?
+
+- intent: ask_proliferative_friday_vegetarian_midday_snack
+  examples: |
+    - What is the vegetarian midday snack for proliferative on Friday?
+    - What can I eat for a midday snack on Friday in the proliferative vegetarian diet?
+    - Suggest a Friday midday snack for proliferative (vegetarian).
+
+- intent: ask_proliferative_friday_vegetarian_dinner
+  examples: |
+    - What is the vegetarian dinner for proliferative on Friday?
+    - Tell me the Friday dinner for proliferative (vegetarian).
+    - What should I eat for dinner on Friday in the proliferative vegetarian diet?
+- intent: ask_proliferative_friday_nonvegetarian_breakfast
+  examples: |
+    - What is the non-vegetarian breakfast for proliferative on Friday?
+    - Tell me the Friday breakfast for proliferative (non-vegetarian).
+    - What should I eat for breakfast on Friday in the proliferative non-vegetarian diet?
+
+- intent: ask_proliferative_friday_nonvegetarian_morning_snack
+  examples: |
+    - What is the non-vegetarian morning snack for proliferative on Friday?
+    - What can I eat for a morning snack on Friday in the proliferative non-vegetarian diet?
+    - Suggest a Friday morning snack for proliferative (non-vegetarian).
+
+- intent: ask_proliferative_friday_nonvegetarian_lunch
+  examples: |
+    - What is the non-vegetarian lunch for proliferative on Friday?
+    - Tell me the Friday lunch for proliferative (non-vegetarian).
+    - What should I eat for lunch on Friday in the proliferative non-vegetarian diet?
+
+- intent: ask_proliferative_friday_nonvegetarian_midday_snack
+  examples: |
+    - What is the non-vegetarian midday snack for proliferative on Friday?
+    - What can I eat for a midday snack on Friday in the proliferative non-vegetarian diet?
+    - Suggest a Friday midday snack for proliferative (non-vegetarian).
+
+- intent: ask_proliferative_friday_nonvegetarian_dinner
+  examples: |
+    - What is the non-vegetarian dinner for proliferative on Friday?
+    - Tell me the Friday dinner for proliferative (non-vegetarian).
+    - What should I eat for dinner on Friday in the proliferative non-vegetarian diet?
+- intent: ask_proliferative_friday_vegan_breakfast
+  examples: |
+    - What is the vegan breakfast for proliferative on Friday?
+    - Tell me the Friday breakfast for proliferative (vegan).
+    - What should I eat for breakfast on Friday in the proliferative vegan diet?
+
+- intent: ask_proliferative_friday_vegan_morning_snack
+  examples: |
+    - What is the vegan morning snack for proliferative on Friday?
+    - What can I eat for a morning snack on Friday in the proliferative vegan diet?
+    - Suggest a Friday morning snack for proliferative (vegan).
+
+- intent: ask_proliferative_friday_vegan_lunch
+  examples: |
+    - What is the vegan lunch for proliferative on Friday?
+    - Tell me the Friday lunch for proliferative (vegan).
+    - What should I eat for lunch on Friday in the proliferative vegan diet?
+
+- intent: ask_proliferative_friday_vegan_midday_snack
+  examples: |
+    - What is the vegan midday snack for proliferative on Friday?
+    - What can I eat for a midday snack on Friday in the proliferative vegan diet?
+    - Suggest a Friday midday snack for proliferative (vegan).
+
+- intent: ask_proliferative_friday_vegan_dinner
+  examples: |
+    - What is the vegan dinner for proliferative on Friday?
+    - Tell me the Friday dinner for proliferative (vegan).
+    - What should I eat for dinner on Friday in the proliferative vegan diet?
+- intent: ask_proliferative_saturday_vegetarian_breakfast
+  examples: |
+    - What is the vegetarian breakfast for proliferative on Saturday?
+    - Tell me the Saturday breakfast for proliferative (vegetarian).
+    - What should I eat for breakfast on Saturday in the proliferative vegetarian diet?
+
+- intent: ask_proliferative_saturday_vegetarian_morning_snack
+  examples: |
+    - What is the vegetarian morning snack for proliferative on Saturday?
+    - What can I eat for a morning snack on Saturday in the proliferative vegetarian diet?
+    - Suggest a Saturday morning snack for proliferative (vegetarian).
+
+- intent: ask_proliferative_saturday_vegetarian_lunch
+  examples: |
+    - What is the vegetarian lunch for proliferative on Saturday?
+    - Tell me the Saturday lunch for proliferative (vegetarian).
+    - What should I eat for lunch on Saturday in the proliferative vegetarian diet?
+
+- intent: ask_proliferative_saturday_vegetarian_midday_snack
+  examples: |
+    - What is the vegetarian midday snack for proliferative on Saturday?
+    - What can I eat for a midday snack on Saturday in the proliferative vegetarian diet?
+    - Suggest a Saturday midday snack for proliferative (vegetarian).
+
+- intent: ask_proliferative_saturday_vegetarian_dinner
+  examples: |
+    - What is the vegetarian dinner for proliferative on Saturday?
+    - Tell me the Saturday dinner for proliferative (vegetarian).
+    - What should I eat for dinner on Saturday in the proliferative vegetarian diet?
+- intent: ask_proliferative_saturday_nonvegetarian_breakfast
+  examples: |
+    - What is the non-vegetarian breakfast for proliferative on Saturday?
+    - Tell me the Saturday breakfast for proliferative (non-vegetarian).
+    - What should I eat for breakfast on Saturday in the proliferative non-vegetarian diet?
+
+- intent: ask_proliferative_saturday_nonvegetarian_morning_snack
+  examples: |
+    - What is the non-vegetarian morning snack for proliferative on Saturday?
+    - What can I eat for a morning snack on Saturday in the proliferative non-vegetarian diet?
+    - Suggest a Saturday morning snack for proliferative (non-vegetarian).
+
+- intent: ask_proliferative_saturday_nonvegetarian_lunch
+  examples: |
+    - What is the non-vegetarian lunch for proliferative on Saturday?
+    - Tell me the Saturday lunch for proliferative (non-vegetarian).
+    - What should I eat for lunch on Saturday in the proliferative non-vegetarian diet?
+
+- intent: ask_proliferative_saturday_nonvegetarian_midday_snack
+  examples: |
+    - What is the non-vegetarian midday snack for proliferative on Saturday?
+    - What can I eat for a midday snack on Saturday in the proliferative non-vegetarian diet?
+    - Suggest a Saturday midday snack for proliferative (non-vegetarian).
+
+- intent: ask_proliferative_saturday_nonvegetarian_dinner
+  examples: |
+    - What is the non-vegetarian dinner for proliferative on Saturday?
+    - Tell me the Saturday dinner for proliferative (non-vegetarian).
+    - What should I eat for dinner on Saturday in the proliferative non-vegetarian diet?
+- intent: ask_proliferative_saturday_vegan_breakfast
+  examples: |
+    - What is the vegan breakfast for proliferative on Saturday?
+    - Tell me the Saturday breakfast for proliferative (vegan).
+    - What should I eat for breakfast on Saturday in the proliferative vegan diet?
+
+- intent: ask_proliferative_saturday_vegan_morning_snack
+  examples: |
+    - What is the vegan morning snack for proliferative on Saturday?
+    - What can I eat for a morning snack on Saturday in the proliferative vegan diet?
+    - Suggest a Saturday morning snack for proliferative (vegan).
+
+- intent: ask_proliferative_saturday_vegan_lunch
+  examples: |
+    - What is the vegan lunch for proliferative on Saturday?
+    - Tell me the Saturday lunch for proliferative (vegan).
+    - What should I eat for lunch on Saturday in the proliferative vegan diet?
+
+- intent: ask_proliferative_saturday_vegan_midday_snack
+  examples: |
+    - What is the vegan midday snack for proliferative on Saturday?
+    - What can I eat for a midday snack on Saturday in the proliferative vegan diet?
+    - Suggest a Saturday midday snack for proliferative (vegan).
+
+- intent: ask_proliferative_saturday_vegan_dinner
+  examples: |
+    - What is the vegan dinner for proliferative on Saturday?
+    - Tell me the Saturday dinner for proliferative (vegan).
+    - What should I eat for dinner on Saturday in the proliferative vegan diet?
+- intent: ask_proliferative_sunday_vegetarian_breakfast
+  examples: |
+    - What is the vegetarian breakfast for proliferative on Sunday?
+    - Tell me the Sunday breakfast for proliferative (vegetarian).
+    - What should I eat for breakfast on Sunday in the proliferative vegetarian diet?
+
+- intent: ask_proliferative_sunday_vegetarian_morning_snack
+  examples: |
+    - What is the vegetarian morning snack for proliferative on Sunday?
+    - What can I eat for a morning snack on Sunday in the proliferative vegetarian diet?
+    - Suggest a Sunday morning snack for proliferative (vegetarian).
+
+- intent: ask_proliferative_sunday_vegetarian_lunch
+  examples: |
+    - What is the vegetarian lunch for proliferative on Sunday?
+    - Tell me the Sunday lunch for proliferative (vegetarian).
+    - What should I eat for lunch on Sunday in the proliferative vegetarian diet?
+
+- intent: ask_proliferative_sunday_vegetarian_midday_snack
+  examples: |
+    - What is the vegetarian midday snack for proliferative on Sunday?
+    - What can I eat for a midday snack on Sunday in the proliferative vegetarian diet?
+    - Suggest a Sunday midday snack for proliferative (vegetarian).
+
+- intent: ask_proliferative_sunday_vegetarian_dinner
+  examples: |
+    - What is the vegetarian dinner for proliferative on Sunday?
+    - Tell me the Sunday dinner for proliferative (vegetarian).
+    - What should I eat for dinner on Sunday in the proliferative vegetarian diet?
+- intent: ask_proliferative_sunday_nonvegetarian_breakfast
+  examples: |
+    - What is the non-vegetarian breakfast for proliferative on Sunday?
+    - Tell me the Sunday breakfast for proliferative (non-vegetarian).
+    - What should I eat for breakfast on Sunday in the proliferative non-vegetarian diet?
+
+- intent: ask_proliferative_sunday_nonvegetarian_morning_snack
+  examples: |
+    - What is the non-vegetarian morning snack for proliferative on Sunday?
+    - What can I eat for a morning snack on Sunday in the proliferative non-vegetarian diet?
+    - Suggest a Sunday morning snack for proliferative (non-vegetarian).
+
+- intent: ask_proliferative_sunday_nonvegetarian_lunch
+  examples: |
+    - What is the non-vegetarian lunch for proliferative on Sunday?
+    - Tell me the Sunday lunch for proliferative (non-vegetarian).
+    - What should I eat for lunch on Sunday in the proliferative non-vegetarian diet?
+
+- intent: ask_proliferative_sunday_nonvegetarian_midday_snack
+  examples: |
+    - What is the non-vegetarian midday snack for proliferative on Sunday?
+    - What can I eat for a midday snack on Sunday in the proliferative non-vegetarian diet?
+    - Suggest a Sunday midday snack for proliferative (non-vegetarian).
+
+- intent: ask_proliferative_sunday_nonvegetarian_dinner
+  examples: |
+    - What is the non-vegetarian dinner for proliferative on Sunday?
+    - Tell me the Sunday dinner for proliferative (non-vegetarian).
+    - What should I eat for dinner on Sunday in the proliferative non-vegetarian diet?
+- intent: ask_proliferative_sunday_vegan_breakfast
+  examples: |
+    - What is the vegan breakfast for proliferative on Sunday?
+    - Tell me the Sunday breakfast for proliferative (vegan).
+    - What should I eat for breakfast on Sunday in the proliferative vegan diet?
+
+- intent: ask_proliferative_sunday_vegan_morning_snack
+  examples: |
+    - What is the vegan morning snack for proliferative on Sunday?
+    - What can I eat for a morning snack on Sunday in the proliferative vegan diet?
+    - Suggest a Sunday morning snack for proliferative (vegan).
+
+- intent: ask_proliferative_sunday_vegan_lunch
+  examples: |
+    - What is the vegan lunch for proliferative on Sunday?
+    - Tell me the Sunday lunch for proliferative (vegan).
+    - What should I eat for lunch on Sunday in the proliferative vegan diet?
+
+- intent: ask_proliferative_sunday_vegan_midday_snack
+  examples: |
+    - What is the vegan midday snack for proliferative on Sunday?
+    - What can I eat for a midday snack on Sunday in the proliferative vegan diet?
+    - Suggest a Sunday midday snack for proliferative (vegan).
+
+- intent: ask_proliferative_sunday_vegan_dinner
+  examples: |
+    - What is the vegan dinner for proliferative on Sunday?
+    - Tell me the Sunday dinner for proliferative (vegan).
+    - What should I eat for dinner on Sunday in the proliferative vegan diet?
+
+
